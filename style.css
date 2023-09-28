@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+    margin: 0%;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    ;
+}
+
+.container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4682B4;
+
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.weather>div {
+    margin: 0.625rem;
+    font-size: 2rem;
+}
+
+.weather p {
+    font-size: 3rem;
+}
+
+.date {
+    font-size: 1rem;
+}
+
+
+.condition {
+    font-size: 1.5rem;
+}
+
+nav {
+    /* padding: 1rem 0; */
+    position: absolute;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #034f84;
+}
+
+nav form {
+
+    width: 30%;
+    grid-template-columns: 4fr 1fr;
+    display: grid;
+}
+
+.searchField {
+    padding: 0.5rem 0;
+    font-size: 1.8rem;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 98%;
+    text-align: center;
+}
+
+nav form button {
+    border: none;
+    outline: none;
+    background-color: 333333;
+    font-size: 1.1rem;
+    color: black;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+
+    /* Adjust container properties for better centering */
+    .container {
+        height: 80vh;
+    }
+
+    /* Adjust font sizes for better readability */
+    .weather>div {
+        font-size: 1.5rem;
+        margin: 0.25rem;
+    }
+
+    .weather p {
+        font-size: 2rem;
+    }
+
+    .date {
+        font-size: 0.8rem;
+    }
+
+    .condition {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust nav properties for better centering */
+    nav {
+        height: 20vh;
+    }
+
+    nav form {
+        width: 80%;
+        grid-template-columns: 4fr 1fr;
+    }
+
+    .searchField {
+        padding: 0.5rem 0;
+        font-size: 1rem;
+        width: 90%;
+        text-align: center;
+    }
+
+    nav form button {
+        font-size: 0.8rem;
+        color: black;
+        background-color: 333333;
+    }
+}
